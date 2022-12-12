@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Pe-icon-7-stroke";
+  src: url("./font-fam/Pe-icon-7-stroke.eot");
+  src: url("./font-fam/materialdesignicons-webfont.eot")
+      format("embedded-opentype"),
+    url("./font-fam/Pe-icon-7-stroke.woff") format("woff"),
+    url("./font-fam//Pe-icon-7-stroke.ttf") format("truetype"),
+    url("./font-fam/Pe-icon-7-stroke.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url(./font-fam/Muli-Regular.ttf) format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: "Pe-icon-7-stroke", sans-serif;
+}

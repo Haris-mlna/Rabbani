@@ -1,15 +1,20 @@
 import React, { useEffect } from "react";
-import "../scss/homepages.scss";
-import Navbar from "../components/Navbar";
+import "../scss/homepages.scss"; // ====> Style
+import Navbar from "../components/Navbar"; // ====> Navbar
+import Footer from "../components/Footer"; // ====> Footer
 
+// Icons
 import { HiChatAlt2 } from "react-icons/hi";
 import { GiOpenBook } from "react-icons/gi";
 import { FaBalanceScale } from "react-icons/fa";
 import { TiCreditCard } from "react-icons/ti";
+// Icons Ends
 
+// img public
 import heroImg from "../assets/theme/hero-1-img.png";
 import headerImg from "../assets/interfaces/header.png";
 
+// AOS Animate Scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,24 +25,27 @@ function Home() {
 
   return (
     <>
+      {/* Navbar */}
       <Navbar />
+      {/* Navbar Ends */}
+
+      {/* Homepages */}
       <div className="homepages">
+        {/* Header */}
         <header>
           <div className="img-header">
             <img src={headerImg} alt="Hijab" className="header-img" />
           </div>
           <div className="text-header">
             <div className="title-header">
-              <h1 data-aos="fade-left" data-aos-duration="1000">
-                Welcome To Rabbani Course
-              </h1>
+              <h1>Welcome To Rabbani Course</h1>
             </div>
             <div className="para-header">
               <span>
                 AYO!! bergabung di kelas rabbani sekarang juga jangan sampai
                 ketinggalan
               </span>
-              <div class="box-para" data-aos="fade-up" data-aos-duration="1000">
+              <div className="box-para" data-aos="fade-up">
                 <p>
                   Kursus online kami memberi Anda cara yang terjangkau dan
                   fleksibel untuk mempelajari keterampilan baru dan mempelajari
@@ -49,6 +57,8 @@ function Home() {
             </div>
           </div>
         </header>
+
+        {/* Main */}
         <main>
           <div className="herotext-container">
             <h2>Keunggulan</h2>
@@ -56,7 +66,7 @@ function Home() {
               Asah skill anda, bila berhasil kami salurkan ke <br /> HRD partner
               kami.
             </p>
-            <ul data-aos="fade-up" data-aos-duration="1000">
+            <ul data-aos="fade-up">
               <li>Mudah untuk bergabung</li>
               <li>Kelas yang fleksibel</li>
               <li>Materi yang padat dan singkat</li>
@@ -68,17 +78,15 @@ function Home() {
             <img src={heroImg} alt="Main-Images" className="heroimg" />
           </div>
         </main>
+
+        {/* Whyus */}
         <div className="whyus">
           <div className="title-why">
             <h3>Mengapa Pilih Kami?</h3>
           </div>
-          <div class="card-container">
-            <div
-              className="card"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <div class="title-card">
+          <div className="card-container">
+            <div className="card">
+              <div className="title-card">
                 <HiChatAlt2 />
                 <span>Communicative</span>
               </div>
@@ -89,8 +97,8 @@ function Home() {
               </div>
             </div>
 
-            <div className="card" data-aos="fade-left" data-aos-duration="1000">
-              <div class="title-card">
+            <div className="card">
+              <div className="title-card">
                 <GiOpenBook />
                 <span>Productive</span>
               </div>
@@ -101,12 +109,8 @@ function Home() {
               </div>
             </div>
 
-            <div
-              className="card"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <div class="title-card">
+            <div className="card">
+              <div className="title-card">
                 <FaBalanceScale />
                 <span>Balanced</span>
               </div>
@@ -117,8 +121,8 @@ function Home() {
               </div>
             </div>
 
-            <div className="card" data-aos="fade-left" data-aos-duration="1000">
-              <div class="title-card">
+            <div className="card">
+              <div className="title-card">
                 <TiCreditCard />
                 <span>Affordable</span>
               </div>
@@ -130,6 +134,8 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

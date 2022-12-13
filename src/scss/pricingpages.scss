@@ -1,0 +1,13 @@
+.pricingpages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 15vh;
+
+  .card-container {
+    width: 70%;
+    background-color: red;
+  }
+}

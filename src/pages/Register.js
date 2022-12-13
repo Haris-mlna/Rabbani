@@ -13,7 +13,7 @@ import {
   AiFillLock,
 } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import { FaAddressCard } from "react-icons/fa";
+import { FaAddressCard, FaBirthdayCake } from "react-icons/fa";
 
 function Register() {
   const baseUrl = "";
@@ -134,7 +134,7 @@ function Register() {
 
               <div className="birthdate-container container-register-form">
                 <label htmlFor="birthdate">
-                  <TfiEmail />
+                  <FaBirthdayCake />
                 </label>
                 <input
                   type="date"
@@ -179,7 +179,7 @@ function Register() {
             </div>
           </div>
 
-          <button type="submit" onClick={handleSubmit}>
+          <button type="submit" onClick={handleSubmit} className="submitreg">
             Submit
           </button>
         </form>

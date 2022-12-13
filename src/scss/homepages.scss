@@ -157,9 +157,12 @@
     }
 
     .hero-img-container {
-      width: 25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .heroimg {
-        width: 500px;
+        width: 100%;
         object-fit: contain;
       }
     }
@@ -183,12 +186,12 @@
       }
 
       .hero-img-container {
-        width: 75%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         .heroimg {
-          width: 75%;
+          width: 100%;
         }
       }
     }

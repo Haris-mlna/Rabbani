@@ -52,6 +52,10 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
+    const testLogin = document.querySelector("#login-form").submit();
+
+    console.log(testLogin);
+
     const findResult = [];
     const searchFieldEmail = "email";
     const searchFieldPass = "password";
@@ -87,7 +91,7 @@ function Login() {
       <Navbar />
       <div className="loginpages">
         <h4>Sign in</h4>
-        <form action="GET" name="login" className="login-form" id="login-form">
+        <form action="POST" name="login" className="login-form" id="login-form">
           <div className="email-container container-login-form">
             <label htmlFor="login-email">
               <TfiEmail />

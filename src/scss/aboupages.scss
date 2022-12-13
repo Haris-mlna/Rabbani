@@ -67,6 +67,91 @@
       }
     }
   }
+
+  .visimisi {
+    display: flex;
+    width: 100%;
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 3rem;
+      font-family: "Dancing Script", cursive;
+    }
+
+    article {
+      width: 75%;
+      margin: 10vh;
+      border-radius: 25px;
+      background-color: gray;
+      color: white;
+      padding: 1rem;
+      box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.3);
+
+      p {
+        cursor: default;
+      }
+
+      .arab {
+        font-size: 3rem;
+      }
+
+      a {
+        color: #fe99d6;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .corporate-culture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 3rem;
+      font-family: "Dancing Script", cursive;
+    }
+
+    article {
+      width: 75%;
+      margin: 10vh;
+      border-radius: 25px;
+      background-color: gray;
+      color: white;
+      padding: 1rem;
+      box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.3);
+
+      p {
+        cursor: default;
+      }
+
+      .arab {
+        font-size: 3rem;
+      }
+
+      a {
+        color: #fe99d6;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .visimisi {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 @media (max-width: 992px) {
